@@ -2,3 +2,5 @@
 Chapter*
 *-checkpoint.ipynb
 MLFAATextbook.pdf
+*.csv
+/RDS
