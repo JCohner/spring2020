@@ -1,0 +1,45 @@
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c c c||} 
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\ 
+ 2 & 7 & 78 & 5415 \\
+ 3 & 545 & 778 & 7507 \\
+ 4 & 545 & 18744 & 7560 \\
+ 5 & 88 & 788 & 6344 \\ [1ex] 
+ \hline
+\end{tabular}
+\caption{Table to test captions and labels}
+\label{table:1}
+\end{table}
+
+
+Step Invaraince:
+T = 0.01; 10^-4 - 10^-1
+T = 0.1;  10^-4 - 10^-2
+
+Ramp Invaraince: 
+T = 0.01; 10^-4 - 10^+1
+T = 0.1;  10^-4 - 10^.25
+
+Matched Emulation
+T = 0.01; 10^-4 - 10^+1
+T = 0.1;  10^-4 - 10^0
+
+Tustin
+T = 0.01; 10^-4 - 10^+2
+T = 0.1;  10^-4 - 10^+1
+
+Tustin Prewarp
+T = 0.01; 10^-4 - 10^+2
+T = 0.1;  10^-2 - 10^+1
+
+Backward Difference
+T = 0.01; 10^-4 - 10^+2
+T = 0.1;  10^-4 - 10^+1
+
+Forward Difference
+T = 0.01; 10^-4 - 10^+1.75
+T = 0.1;  10^-4 - 10^0
