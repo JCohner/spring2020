@@ -8,8 +8,9 @@ assignin('base', 'tstop', tstop);
 
 hold on;
 
-for i = (length(Tarr):-1:1)
+for i = (1:length(Tarr))
     D = c2d(C,Tarr(i),'foh');
+    D = minreal(D);
     assignin('base', 'D', D);
     out = sim("analog_emulators");
     t = out.ScopeData(:,1);
@@ -18,9 +19,9 @@ for i = (length(Tarr):-1:1)
     legend_list(end+1) = sprintf("T = %0.5f", Tarr(i)); 
     fprintf(legend_list(end))
     fprintf("\n");
-    respinfo = stepinfo(t,y,1.0, 'SettlingTimeThreshold', 0.01);
+    respinfo = stepinfo(y,t, 'SettlingTimeThreshold', 0.01) 
     
-    
+
 end
 
 legend(legend_list)
