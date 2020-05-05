@@ -57,7 +57,7 @@ Kd = 20 * s;
 D_forward_00_1 = Kp + Kd + Ki;
 
 %bode plots
-
+% 
 figure()
 bode(C, D_step_0_1);
 title("Bode Plot: Step Invariance; T = 0.1")
